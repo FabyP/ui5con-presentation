@@ -1,0 +1,80 @@
+/* Farben */
+.green{
+    color: #00bf1c!important;
+}
+.black{
+    color:#222!important;
+}
+.light-grey{
+    color: #4e4e4e!important;
+}
+.dark-grey{
+    color:#434343!important;
+}
+
+
+/* Zweispalter */
+.col-container{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
+
+
+/* Textalignment */
+.text-left{
+    text-align: left;
+}
+
+
+/* Images */
+.profile{
+    width: 60%;
+    height: auto;
+}
+.pic-center{
+    height: 500px;
+    width: auto;
+}
+.no-border{
+    border: none!important;
+    box-shadow: none!important;
+}
+
+/* advades Logo */
+.logo {
+    width: 10%;
+    height: 7%;
+    position: absolute;
+    right: 140px;
+    bottom: 10px;
+    background-image: url(/img/advades-logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+/* UI Bob */
+.ui-bob {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    right: 50%;
+    bottom: 42%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+/* Code */
+pre {
+    box-shadow: none!important;
+}
+
+.test{
+    position: absolute;
+    z-index: 1;
+    right: 62%;
+    bottom: 250px;
+}

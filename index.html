@@ -1,50 +1,344 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title>SAPUI5 Controls vs. UI5 Web Components</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/advades.css">
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="logo" </div> </div> <div class="slides">
+			<section data-background="\img\green.svg">
+			</section>
+
+			<section>
+				<div class="col-container">
+					<div class="col text-left">
+						<h2>Hello </h2>
+						<p>Fabienne Pipping</p>
+						<p>
+							<small>🎓 Media Computer Science Student<br>
+								💼 Working Student <a href="https://www.advades.com" target="blank"
+									rel="noopener norefferer">@advades</a></small>
+						</p>
+						<p>
+							<small>Nerd at heart</small>
+						</p>
+					</div>
+					<div class="col">
+						<img class="profile" data-src="/img/Faby.jpg">
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="col-container">
+					<div class="col text-left">
+						<h2>Hi there!</h2>
+						<p>Alexander Seibel</p>
+						<p>
+							<small>
+								💼 Developer <a href="https://www.advades.com" target="blank"
+									rel="noopener norefferer">@advades</a>
+							</small>
+						</p>
+						<p>
+							<small>Something Personal</small>
+						</p>
+					</div>
+					<div class="col">
+						<img class="profile" data-src="/img/Alex.jpg">
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2>UI5con 2019</h2>
+				<div>
+					<img class="pic-center" data-src="/img/ui5con.jpg" data-fragment-index="1" />
+			</section>
+
+			<section>
+				<h2>Frameworks</h2>
+				<h3>Performance Score</h3>
+				<div style="margin-top: 60px;" class="col-container">
+					<div class="col">
+						<img class="no-border" height="150px" data-src="/img/vue-logo.png" alt="">
+					</div>
+					<div class="col">
+						<img class="no-border" height="150px" data-src="/img/angular-logo.png" alt="">
+					</div>
+					<div class="col">
+						<img class="no-border" height="150px" data-src="/img/react-logo.png" alt="">
+					</div>
+				</div>
+
+				<div class="col-container fragment fade-up">
+					<div class="col">
+						<small>98/100</small>
+					</div>
+					<div class="col">
+						<small>95/100</small>
+					</div>
+					<div class="col">
+						<small>98/100</small>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2>Use Case</h2>
+				<div style="margin-top: 60px;" class="col-container">
+					<div class="col">
+						<img class="no-border" data-src="/img/sapolis.svg" alt="" height="200px">
+						<p>Sapolis</p>
+					</div>
+					<div class="col">
+						<img class="no no-border" data-src="/img/university.svg" alt="" height="200px">
+						<p>European Union</p>
+					</div>
+
+				</div>
+				<image class="fragment fade-right ui-bob no-border" data-src="/img/uibob.gif" frameborder="0">
+			</section>
+
+			<section data-background-iframe="https://eventmanager-react.herokuapp.com/#/home"
+				data-background-interactive>
+				<div
+					style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: #00bf1c; color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+					<h2 style="color:#fff;">React with UI5 Web Components</h2>
+				</div>
+			</section>
+			<!--<section
+				data-background-iframe="https://eventmanagersapui5-s0020406424trial.dispatcher.hanatrial.ondemand.com/index.html?hc_reset"
+				data-background-interactive>
+				<div
+					style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: #00bf1c; color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+					<h2 style="color:#fff;">SAPUI5</h2>
+				</div>
+			</section>-->
+
+			<section data-background="/img/green.svg">
+				<h2 class="text-left test">Comparison</h2>
+			</section>
+
+			<section>
+				<section>
+					<h2>Documentation</h2>
+				</section>
+				<section>
+					<h2>Documentation</h2>
+					<div style="margin-top: 60px;" class="col-container">
+						<div style="margin-right: 20px;" class="col">
+							<p>SAPUI5</p>
+							<img class="no-border" width:"90%" data-src="/img/sapui5-doc.jpg" alt="">
+						</div>
+						<div class="col fragment">
+							<p>UI5 Web Components</p>
+							<img class="no-border" width:"90%" data-src="/img/ui5webc-doc.jpg" alt="">
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Scope</h2>
+				</section>
+				<section>
+					<h2>Scope</h2>
+					<div style="margin-top: 60px;" class="col-container">
+						<div class="col">
+							<p >SAPUI5</p>
+							<p style="font-weight:bold; font-size: 1.3em;">~600</p>
+						</div>
+						<div class="col">
+							<p>UI5 Web Components</p>
+							<p style="font-weight:bold; font-size: 1.3em;">26</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>None-Control-Elements</h2>
+				</section>
+				<section>
+					<h2>None-Control-Elements</h2>
+					<div>
+						<p style="margin-bottom: 0;">SAPUI5</p>
+						<img class="no-border" width="90%" data-src="/img/code.PNG">
+
+						<!--<pre>
+							<code class="xml">
+<core:HTML content="
+
+	"
+></core:HTML>						
+							</code>
+						</pre>-->
+
+					</div>
+					<div class="fragment fade-up">
+						<p style="margin-bottom: 0; margin-top: 50px;">UI5 Web Components</p>
+						<pre style="margin-top: 0;">
+					<code class="html" data-trim>
+<p style="font-size:14px">
+	UI5 Web Components are awesome:
+	<a target ="_blank" href="#">awesomeness</a>
+</p>
+					</code>
+				</pre>
+					</div>
+				</section>
+			</section>
+
+
+			<section>
+				<section>
+					<h2>Performance</h2>
+				</section>
+				<section>
+					<h2>Performance</h2>
+					<h3>Google Lighthouse</h3>
+					<table style="font-size: 1.9rem;">
+						<thead>
+							<tr>
+								<th>Metric</th>
+								<th>Weight</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>first-contentful-paint</td>
+								<td>3</td>
+							</tr>
+							<tr>
+								<td>first-meaningful-paint</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>first-cpu-idle</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>interactive</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td>speed-index</td>
+								<td>4</td>
+							</tr>
+							<tr>
+								<td>estimated-input-latency</td>
+								<td>0</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<section>
+					<h2>Performance</h2>
+					<h3>Score</h3>
+					<div style="margin-top: 60px;" class="col-container">
+						<div style="margin-right: 20px;" width="90%" class="col">
+							<p>SAPUI5</p>
+							<img class="no-border" data-src="/img/performance-sapui5.PNG" alt="">
+						</div>
+						<div class="col">
+							<p>UI5 Web Components</p>
+							<img class="no-border" width="90%" data-src="/img/performance-react.PNG" alt="">
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Accessibility</h2>
+				</section>
+				<section>
+					<h2>Accessibility</h2>
+					<div style="margin-top: 60px;" class="col-container">
+						<div class="col">
+							<p>SAPUI5</p>
+							<img class="no-border" data-src="/img/landmarksbefore.png" alt="">
+						</div>
+						<div class="col">
+							<p>UI5 Web Components</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2>Accessibility</h2>
+					<a href="https://giphy.com/embed/26xBI73gWquCBBCDe" target="_blank"
+						rel="noopener noreferrer"><iframe src="https://giphy.com/embed/26xBI73gWquCBBCDe" width="480"
+							height="295" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></a>
+				</section>
+				<section>
+					<h2>Accessibility</h2>
+					<p>SAPUI5 Controls ≠ UI5 Web Components</p>
+				</section>
+			</section>
+
+			<section>
+				<h2>Other striking differences</h2>
+				<ul>
+					<li>Architecture</li>
+					<li>Need of CSS</li>
+				</ul>
+			</section>
+
+			<section data-background="\img\green.svg">
+				<h2 class="text-left test">Conclusion</h2>
+			</section>
+
+			<section>
+				<a href="https://giphy.com/gifs/chuber-feelings-thoughts-questions-XHVmD4RyXgSjd8aUMb">
+					<iframe data-src="https://giphy.com/embed/XHVmD4RyXgSjd8aUMb" width="480" height="360"
+						frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+				</a>
+			</section>
 		</div>
+	</div>
 
-		<script src="js/reveal.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				hash: true,
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/highlight/highlight.js' },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-		</script>
-	</body>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			hash: true,
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/highlight/highlight.js' },
+				{ src: 'plugin/notes/notes.js', async: true }
+			]
+		});
+	</script>
+</body>
+
 </html>
