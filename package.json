@@ -1,23 +1,22 @@
 {
-  "name": "reveal.js",
-  "version": "3.9.0",
-  "description": "The HTML Presentation Framework",
-  "homepage": "http://revealjs.com",
+  "name": "ui5con-presentation",
+  "version": "3.9.2",
+  "description": "Presentation for UI5con Belgium",
+  "homepage": "https://www.advades.com",
   "subdomain": "revealjs",
   "main": "js/reveal.js",
   "scripts": {
     "test": "grunt test",
-    "start": "grunt uglify",
-    "build": "node server.js"
+    "start": "grunt serve",
+    "build": "grunt"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
+    "name": "Fabienne Pipping",
+    "email": "f.pipping@advades.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git://github.com/FabyP/ui5con-presentation.git"
   },
   "engines": {
     "node": ">=9.0.0"
