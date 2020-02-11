@@ -31,6 +31,9 @@
 	<div class="reveal">
 		<div class="logo" </div> </div> <div class="slides">
 			<section data-background="\img\green.svg">
+				<aside class="notes">
+					Well.. If you cant spend your valentines day with someone you love, I hope you at least can spend with something you love. For exmaple coding, connecting with new people and learning cool new stuff, hopefully from my presentation as well, even though the topic isnt about love but about a, I would say peaceful battle without a winner between classical Ui5-Controls and Ui5 web components
+				</aside>
 			</section>
 
 			<section>
@@ -51,6 +54,9 @@
 						<img class="profile" data-src="/img/Faby.jpg">
 					</div>
 				</div>
+				<aside class="notes">
+					My name is Fabienne Pipping, I'm a Media Computer Science Student from a technical university in germany and it's been about 1 year since i started working at advades
+				</aside>
 			</section>
 
 			<section>
@@ -72,12 +78,26 @@
 						<img class="profile" data-src="/img/Alex.jpg">
 					</div>
 				</div>
+				<aside class="notes">
+					<ul>
+						<li>And thats my collegue Alexander Seibel</li>
+						<li>Vorstellung Alex</li>
+						<li>Vorstellung advades</li>
+					</ul>
+				</aside>
 			</section>
 
 			<section>
 				<h2>UI5con 2019</h2>
-				<div>
-					<img class="pic-center" data-src="/img/ui5con.jpg" data-fragment-index="1" />
+				<img class="pic-center" data-src="/img/ui5con.jpg" data-fragment-index="1" >
+				<aside class="notes">
+					<ul>
+						<li>Lets consider this talk as some sort of journey that started at last years ui5con in sankt leon roth</li>
+						<li>I dont know if some of you have been there, at least I was there and my key takeaway were the Ui5 web components</li>
+						<li>Enterprise class re-usable UI-Elements for a broad range of web frameworks,with a great performance, the same fancy fiori three design as normal ui5 controls and they are completely enterprise ready</li>
+						<li>So the day after ui5con, I asked my friend google and started researching</li>
+					</ul>
+				</aside>
 			</section>
 
 			<section>
@@ -106,6 +126,17 @@
 						<small>98/100</small>
 					</div>
 				</div>
+				<aside class="notes">
+					<ul>
+						<li>Of course I ended up on the official page for ui5 webcomponents and i remember that there were three simple examples, just a small to do list, all looking the same, but they were implemented with different frameworks</li>
+						<li>One with View, one with Angular, and one with react</li>
+						<li>And i ran a google light house performance test on all three of them, for those who dont know google lighthose, it's part of the chrome development tools in your audits tab</li>
+						<li>In those audits, a website can achive a score from 1 to 100, with 100 as the best possible score</li>
+						<li>And those were the results: React an view both achieved a score of 98, while angular was slightly worse with a score of 95</li>
+						<li>Looks awesome, doesn't it?</li>
+						<li>Considering that nothing in life is never that easy and perfect, we decided to take a deeper look and compare "classical" ui5 with the ui5 web components in a real world example using react js</li>
+					</ul>
+				</aside>
 			</section>
 
 			<section>
@@ -113,7 +144,7 @@
 				<div style="margin-top: 60px;" class="col-container">
 					<div class="col">
 						<img class="no-border" data-src="/img/sapolis.svg" alt="" height="200px">
-						<p>Sapolis</p>
+						<p><strong>SAP</strong>olis</p>
 					</div>
 					<div class="col">
 						<img class="no no-border" data-src="/img/university.svg" alt="" height="200px">
@@ -122,6 +153,16 @@
 
 				</div>
 				<image class="fragment fade-right ui-bob no-border" data-src="/img/uibob.gif" frameborder="0">
+				<aside class="notes">
+					<ul>
+						<li>For this example:</li>
+						<li>Lets imagine a town called SAP-city or sapolis (just stole this idea from metropolis, pardon me , if i pronounce too german) and this town needs an application to have an overview about their upcoming public events. So we have some sort of organizer, where staff members can create new events and see existing events. We thought about maybe even make this overview of the events public, so town citizens are able to see whats happeing in their hometown, as well</li>
+						<li>Then there is this huge institution called Euopean Union with a ton of laws and requirements concerning accessibility such as EU 2016/2102  and the WCAG Guidelines. I dont wanna bother you with that stuff too much.Lets keep things short and say everyone and their mother, maybe even your cat, must be able to access the application.</li>
+						<li>The use of a completely thought throud design language (in case of colorization, contrasts and so on) would be a great start to build a accessible app and by pure chance, SAP Fiori is such a design language and wuld be perfect for our eventmanger</li>
+						<li>so,  lets build the 1.000.000th organizer cause the world doesnt have enough already. Not the hero we needed, but the hero we get</li>
+						<li>We developed two eventmangagers, one with react and the ui5web components and one with SAPUI5, both look similiar and have the same functionality</li>
+					</ul>
+				</aside>
 			</section>
 
 			<section data-background-iframe="https://eventmanager-react.herokuapp.com/#/home"
@@ -130,23 +171,48 @@
 					style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: #00bf1c; color: #fff; padding: 20px; font-size: 20px; text-align: left;">
 					<h2 style="color:#fff;">React with UI5 Web Components</h2>
 				</div>
+				<aside class="notes">
+					<ul>
+						<li>And this is how it looks like in react with the ui5 web components</li>
+						<li>We have our overview page with the new cards (the reight one was just for some experimeting with routing, cause they're completely different), we have a table with a detail view, we cann add new events and filter</li>
+					</ul>
+				</aside>
 			</section>
-			<!--<section
+			<section
 				data-background-iframe="https://eventmanagersapui5-s0020406424trial.dispatcher.hanatrial.ondemand.com/index.html?hc_reset"
 				data-background-interactive>
 				<div
 					style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: #00bf1c; color: #fff; padding: 20px; font-size: 20px; text-align: left;">
 					<h2 style="color:#fff;">SAPUI5</h2>
 				</div>
-			</section>-->
+				<aside class="notes">
+					<ul>
+						<li>And thats how it looks in SAPUI5</li>
+						<li>Basically the same? Isnt it?</li>
+					</ul>
+				</aside>
+			</section>
 
 			<section data-background="/img/green.svg">
 				<h2 class="text-left test">Comparison</h2>
+				<aside class="notes">
+					<ul>
+						<li>So we have a similar looking frontend, now it's time to analyse both versions mainly from the point of view of a web developer, thats why we took a look at the documentation, the amount of controls or compopnents you can use, then something I call None-Control-Elements and last but not least: performance and accessibility</li>
+						<li>At this point i have to say, that i did those tests back in september so the versions i used were for SAPUI5 1.70.0 and for the ui5 webcomponents 1.0.0-rc.2</li>
+						<li>The google lighthouse metrics were also updated by now and have slightely changed</li>
+					</ul>
+				</aside>
 			</section>
 
 			<section>
 				<section>
 					<h2>Documentation</h2>
+					<aside class="notes">
+						<ul>
+							<li>The first aspect were going to take a look at is the documentation</li>
+							<li>If you have ever developed something with a poor documented technology, you know how important it is for a developer.</li>
+						</ul>
+					</aside>
 				</section>
 				<section>
 					<h2>Documentation</h2>
@@ -160,18 +226,28 @@
 							<img class="no-border" width:"90%" data-src="/img/ui5webc-doc.jpg" alt="">
 						</div>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>And if thats the documentation for SAPUI5, than thats the documentation for react with the ui5 web components. Ist not about the chaos, but about the amount</li>
+							<li>In SAPUI5 we have a huge online documentation with a ton of examples, we have the platform openSAP for free, there are many blogs and books about SAPUI5 and so on</li>
+							<li>On the contrary, we have react, with an overall okay documentation and then there are the ui5 web components with little documentation adn nearly nothing about the combination of react an the web components. The only plus was a way more active stackoverflow community, but in the end, developing the sapolis eventmanager in react took way more time than with SAPUI5</li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 
 			<section>
 				<section>
 					<h2>Scope</h2>
+					<aside class="notes">
+						Not much to say to this point
+					</aside>
 				</section>
 				<section>
 					<h2>Scope</h2>
 					<div style="margin-top: 60px;" class="col-container">
 						<div class="col">
-							<p >SAPUI5</p>
+							<p >SAPUI5 Controls</p>
 							<p style="font-weight:bold; font-size: 1.3em;">~600</p>
 						</div>
 						<div class="col">
@@ -179,11 +255,23 @@
 							<p style="font-weight:bold; font-size: 1.3em;">26</p>
 						</div>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>I've listened to the UI5 News Podcast and it was mentioned there, that SAPUI5 has about 600 controls, well not only controls, but also predefined layouts etc. and if you look in the online documentation, there at least so many that you dont wanna count them anymore</li>
+							<li>And the web components only adapted 26 controls. Thats it, thats everything you can work with</li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 			<section>
 				<section>
 					<h2>None-Control-Elements</h2>
+					<aside class="notes">
+						<ul>
+							<li>The next aspect is what I call None Control-Elements</li>
+							<li>What if I have the requirement to build something i can not represent as a ui5 control or component, just some basic html stuff like a static text with an embedded link</li>
+						</ul>
+					</aside>
 				</section>
 				<section>
 					<h2>None-Control-Elements</h2>
@@ -212,6 +300,12 @@
 					</code>
 				</pre>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>Thats one way how it can look in SAPUI5 : there is the xml tag HTML from the core library. Doenst look very noce, cause we have to escape all special charakters</li>
+							<li>In react, ist just basic html everyone is used to</li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 
@@ -219,6 +313,9 @@
 			<section>
 				<section>
 					<h2>Performance</h2>
+					<aside class="notes">
+						Now we're gettingto one of the most intersitings points, a performance comparison of both frameworks
+					</aside>
 				</section>
 				<section>
 					<h2>Performance</h2>
@@ -257,6 +354,16 @@
 							</tr>
 						</tbody>
 					</table>
+					<aside class="notes">
+						<ul>
+							<li>Again, the google lighthouse audits were used, using a user centered approach of measauring it</li>
+							<li>This means:</li>
+							<li>Lighthouse doesn't look at when are all my files loaded, but when can the user see first content, when is he able to interact with my application and thats exactly what those metrics with their weight do.</li>
+							<li>By the weight ou can see which ones are the most important ones, so first-conentful paint is when my user sees the content, interactive means when can he interact with the application and the speed index is the average loading timetill UI Elements are displayed</li>
+							<li>Again, we have a score from 1 to 100, with 100 as the best possible score</li>
+							<li>Any Gussings? Which performance scored SAPUI5? … And React with the UI5 Web Components?</li>
+						</ul>
+					</aside>
 				</section>
 				<section>
 					<h2>Performance</h2>
@@ -271,12 +378,30 @@
 							<img class="no-border" width="90%" data-src="/img/performance-react.PNG" alt="">
 						</div>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>Those are the results</li>
+							<li>SAPUI5 got a score of 30, while React got a score of 95. the results depend on your testing environment, if you wanna recreate this, your results may differ</li>
+							<li>Quite the different, isnt it?</li>
+							<li>In SAPUI5, it takes 5 seconds till we're able to see first content and we have to wait further 4 seconds to be able to interact with the application. Makes in total 9 seconds till the user can start effectively working with our Fiori App. And in our other application, whick looks completely the same and provides the same functionality, youve seen it, the site is fully loaded after 2,6 seconds.</li>
+							<li>The reason for this, is, that in SAPUI5, we have a ton of unused CSS that is loaded, even for controls we havent even used. And there is the SAP ui core library, which somehow blocks rendering.</li>
+							<li>On the contrary, we have a react, a framework that comes with much less overhead and as a developer, i was able to specify, which resources i want to have loaded in my application</li>
+							<li>Since react is extremely lightweight,  you need a lot of third party libraries to have a fully functioning application</li>
+							<li>Moreover, react uses a virtual dom, so if the state of one of my UI components changes, those actions are executed on a virtual dom. React then compares my changed virtual dom with my real dom and only changes those elements, which differ from the real dom</li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 
 			<section>
 				<section>
 					<h2>Accessibility</h2>
+					<aside class="notes">
+						<ul>
+							<li>Next aspect, accessibilty. Very important for our town sapolis</li>
+							<li>Since web components and SAPUI5 controls are somehow, the same UI- elements, which should both be enterprise ready and have implmented the same standard, i thought I would have equal test results concerning accessibilty</li>
+						</ul>
+					</aside>
 				</section>
 				<section>
 					<h2>Accessibility</h2>
@@ -289,16 +414,33 @@
 							<p>UI5 Web Components</p>
 						</div>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>So i ran my first test with a chrome extension called landmarks and those were the results</li>
+							<li>No, i did not forget to embed one picture</li>
+							<li>In SAPUI5, there are by default some of the landmarks implemented, while in my react appication with the ui5 web components, there werent one at all.</li>
+						</ul>
+					</aside>
 				</section>
 				<section>
 					<h2>Accessibility</h2>
 					<a href="https://giphy.com/embed/26xBI73gWquCBBCDe" target="_blank"
 						rel="noopener noreferrer"><iframe src="https://giphy.com/embed/26xBI73gWquCBBCDe" width="480"
 							height="295" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></a>
+					<aside class="notes">
+						This was pretty much me, when i sam my results, cause i really thought they were equal
+					</aside>
 				</section>
 				<section>
 					<h2>Accessibility</h2>
 					<p>SAPUI5 Controls ≠ UI5 Web Components</p>
+					<aside class="notes">
+						<ul>
+							<li>Turns out there not</li>
+							<li>i detected some more differences, for example the profile picture and logo in my shellbar. In react, my testsoftare wasnt happy with them , complaining about missing alternative texts. And in SAPUI5, this simply wasnt the case. I can just assume, that those pictures in SAPUI5 are rendered with the aria attribute presentation or something like that.</li>
+							<li>So: If you want to build your application with react, be careful, you have a lot more work to do concerning accessibility. And sometimes. There isnt even a direct way of changing somehing from predefined components such as those profile pictures</li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 
@@ -308,10 +450,24 @@
 					<li>Architecture</li>
 					<li>Need of CSS</li>
 				</ul>
+				<aside class="notes">
+					<ul>
+						<li>In SAPUI5, we have a strict distribution into layout, functionality and model (MVC), while in react, we have all three of them combined in one component. This makes them reusable, but also worse to maintain the bigger my application gets, especially cause react lacks clearly defined best practices</li>
+						<li>And the other striking difference is the need off css in react, actually you need a ton of it, cause there arent much predifeined components or layouts you can use like in SAPUI5</li>
+					</ul>
+				</aside>
 			</section>
 
 			<section data-background="\img\green.svg">
 				<h2 class="text-left test">Conclusion</h2>
+				<aside class="notes">
+					<ul>
+						<li>SAPUI5 will stay your first choice for everything enterprise related. Due to the scope, the maintainability and better access to documentation</li>
+						<li>But if youre application can be clssified in the consumer environent, then the Ui5 web components with your framework of choice would be a better choice, cause they provide more flexibilty and have a better performance. Cause you all know, if my site takes to long to load, the consumer will just click the back button and chose a better performing site.</li>
+						<li>It really depends on the requirements of your project</li>
+						<li>UI5 evolution -> beide werden besser</li>
+					</ul>
+				</aside>
 			</section>
 
 			<section>
@@ -319,6 +475,9 @@
 					<iframe data-src="https://giphy.com/embed/XHVmD4RyXgSjd8aUMb" width="480" height="360"
 						frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 				</a>
+				<aside class="notes">
+					Do you have any questions?
+				</aside>
 			</section>
 		</div>
 	</div>
